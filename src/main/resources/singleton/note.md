@@ -132,3 +132,12 @@ public class SingletonTests {
   可在getSingleton方法前加synchronized关键字，但最优方式还是通用代码中的饿汉方式。
 
 - 单例模式不要实现Cloneable接口
+
+## 拓展
+- 有上限的单例模式
+
+## 最佳实践
+- 如何避免被垃圾回收
+  - 由容器管理单例的生命周期（如Spring）
+  - 状态随时记录
+  
