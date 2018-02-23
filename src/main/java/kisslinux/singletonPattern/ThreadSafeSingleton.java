@@ -1,5 +1,9 @@
 package kisslinux.singletonPattern;
 
+/**
+ * 线程安全
+ * 饿汉
+ */
 public class ThreadSafeSingleton {
     private static final ThreadSafeSingleton threadSafeSingleton = new ThreadSafeSingleton();
 

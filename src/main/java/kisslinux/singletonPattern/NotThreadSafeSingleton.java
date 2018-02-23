@@ -1,5 +1,8 @@
 package kisslinux.singletonPattern;
 
+/**
+ * 线程不安全
+ */
 public class NotThreadSafeSingleton {
     private NotThreadSafeSingleton() {
     }
@@ -8,7 +11,19 @@ public class NotThreadSafeSingleton {
 
     public static NotThreadSafeSingleton getSingleton() {
         if (notThreadSafeSingleton == null) {
-            return new NotThreadSafeSingleton();
+            notThreadSafeSingleton = new NotThreadSafeSingleton();
+        }
+        return notThreadSafeSingleton;
+    }
+
+    /**
+     * 线程安全的
+     * 懒汉
+     * @return NotThreadSafeSingleton
+     */
+    public static synchronized NotThreadSafeSingleton getThreadSafeSingleton() {
+        if (notThreadSafeSingleton == null) {
+            notThreadSafeSingleton = new NotThreadSafeSingleton();
         }
         return notThreadSafeSingleton;
     }
