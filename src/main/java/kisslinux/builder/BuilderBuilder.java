@@ -3,6 +3,8 @@ package kisslinux.builder;
 /**
  * created by lsk on 2018-02-24 22:08.
  *
+ * 抽象建造者
+ *
  * @author 庄壮壮
  */
 public abstract class BuilderBuilder {
