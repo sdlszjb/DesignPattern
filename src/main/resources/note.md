@@ -1,8 +1,8 @@
-1. 单例模式 singleton
-2. 工厂方法 factory
-3. 抽象工厂 absfactory
-4. 模板方法 template
-5. 建造者   builder
+1. 单例模式 singleton 单例/线程安全
+2. 工厂方法 factory 产品的生产封装化
+3. 抽象工厂 absfactory 多族/多产品/横向扩展容易，纵向扩展困难。
+4. 模板方法 template 继承/父类控制基本方法执行顺序，子类实现基本方法
+5. 建造者   builder 导演类/组装顺序
 6. 代理     proxy
 7. 原型     prototype
 8. 中介者
