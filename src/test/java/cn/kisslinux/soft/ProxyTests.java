@@ -1,5 +1,6 @@
 package cn.kisslinux.soft;
 
+import kisslinux.proxy.ProxyProxyProxy;
 import kisslinux.proxy.ProxyRealSubject;
 import kisslinux.proxy.ProxySubject;
 import kisslinux.proxy.ProxySubjectProxy;
@@ -23,6 +24,7 @@ public class ProxyTests {
 
     @Test
     public void testHardClient() {
+
         HardProxySubject subject = new HardProxyRealSubject();
 
         System.out.println("-------\n" +
@@ -30,10 +32,33 @@ public class ProxyTests {
                 "-------");
         subject.request();
 
+        System.out.println();
+        System.out.println();
+
         HardProxySubject proxy = new HardProxySubjectProxy(new HardProxyRealSubject());
         System.out.println("-------\n" +
                 "MyProxy: \n" +
                 "-------");
         proxy.request();
+
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println("-------\n" +
+                "RealProxy: \n" +
+                "-------");
+        HardProxySubject realSub = new HardProxyRealSubject();
+        HardProxySubject realProxy = realSub.getProxy();
+        realProxy.request();
+    }
+
+    /**
+     * 测试 Proxy接口，定制Proxy特性。
+     */
+    @Test
+    public void testProxyInterface() {
+        ProxySubject subject = new ProxyProxyProxy(new ProxyRealSubject());
+        subject.request();
     }
 }

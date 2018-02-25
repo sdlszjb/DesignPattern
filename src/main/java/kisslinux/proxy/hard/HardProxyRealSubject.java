@@ -10,7 +10,6 @@ public class HardProxyRealSubject implements HardProxySubject {
     private HardProxySubject proxy = null;
 
     public HardProxyRealSubject() {
-//        this.proxy = new ;
     }
 
     @Override
@@ -24,16 +23,19 @@ public class HardProxyRealSubject implements HardProxySubject {
 
     /**
      * 找到自己的代理
-     * @return
+     * @return HardProxySubject
      */
     @Override
     public HardProxySubject getProxy() {
-        return proxy;
+        this.proxy = new HardProxySubjectProxy(this);
+        return this.proxy;
     }
 
     /**
      * 检测代理是否可用
-     * @return
+     * 这里的检测方法是很简单的一种
+     * 真实案例会校验Proxy的匹配性
+     * @return true/false
      */
     private boolean isProxy() {
         return this.proxy != null;
