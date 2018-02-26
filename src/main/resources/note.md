@@ -5,7 +5,7 @@
 5. 建造者   builder 导演类/组装顺序
 6. 代理     proxy
 7. 原型     prototype
-8. 中介者
+8. 中介者   mediator 
 9. 命令     command
 10. 责任链
 11. 装饰    decorator
