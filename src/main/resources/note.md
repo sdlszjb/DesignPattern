@@ -3,9 +3,9 @@
 3. 抽象工厂 absfactory 多族/多产品/横向扩展容易，纵向扩展困难。
 4. 模板方法 template 继承/父类控制基本方法执行顺序，子类实现基本方法
 5. 建造者   builder 导演类/组装顺序
-6. 代理     proxy
-7. 原型     prototype
-8. 中介者   mediator 
+6. 代理     proxy 为已实现类增加额外功能
+7. 原型     prototype 对象复制/克隆
+8. 中介者   mediator  多个对象互相依赖严重/mvc
 9. 命令     command
 10. 责任链
 11. 装饰    decorator
