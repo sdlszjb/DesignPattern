@@ -4,6 +4,7 @@ import kisslinux.proxy.ProxyProxyProxy;
 import kisslinux.proxy.ProxyRealSubject;
 import kisslinux.proxy.ProxySubject;
 import kisslinux.proxy.ProxySubjectProxy;
+import kisslinux.proxy.dynamic.*;
 import kisslinux.proxy.hard.HardProxyRealSubject;
 import kisslinux.proxy.hard.HardProxySubject;
 import kisslinux.proxy.hard.HardProxySubjectProxy;
@@ -60,5 +61,12 @@ public class ProxyTests {
     public void testProxyInterface() {
         ProxySubject subject = new ProxyProxyProxy(new ProxyRealSubject());
         subject.request();
+    }
+
+    @Test
+    public void testDynamicProxy() {
+        DynamicProxySubject subject = new DynamicProxyRealSubject();
+        DynamicProxySubject proxy = DynamicProxySubjectProxy.newProxyInstance(subject);
+        proxy.doSomething();
     }
 }
