@@ -7,7 +7,7 @@
 7. 原型     prototype 对象复制/克隆
 8. 中介者   mediator  多个对象互相依赖严重/mvc
 9. 命令     command
-10. 责任链
+10. 责任链  chain
 11. 装饰    decorator
 12. 策略    strategy
 13. 适配器  adapter
