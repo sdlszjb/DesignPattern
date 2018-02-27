@@ -5,9 +5,9 @@
 5. 建造者   builder 导演类/组装顺序
 6. 代理     proxy 为已实现类增加额外功能
 7. 原型     prototype 对象复制/克隆
-8. 中介者   mediator  多个对象互相依赖严重/mvc
-9. 命令     command
-10. 责任链  chain
+8. 中介者   mediator 多个对象互相依赖严重/mvc
+9. 命令     command 对执行者进行封装/封装操作集合
+10. 责任链  chain 诸如流程/处理者自行决定由谁处理
 11. 装饰    decorator
 12. 策略    strategy
 13. 适配器  adapter
