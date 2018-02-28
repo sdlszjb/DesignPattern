@@ -12,7 +12,7 @@
 12. 策略    strategy 重点在算法的替换/与Command的不同在于，Command重点在于执行对象的解耦。
 Example。zip和gzip，命令模式可以有 压缩 解压缩 两个命令，但是具体的执行者可以有两个。
 策略模式 可以由zip策略和gzip策略，每种策略均提供类压缩和解压缩的方法。
-13. 适配器  adapter
+13. 适配器  wrapper
 14. 迭代器  iterator
 15. 组合    composite
 16. 观察者  observer
