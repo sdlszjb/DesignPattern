@@ -15,7 +15,7 @@ Example。zip和gzip，命令模式可以有 压缩 解压缩 两个命令，但
 13. 适配器  wrapper 将一个或多个类包装成一个类
 14. 迭代器  iterator
 15. 组合    composite tree、组合结构
-16. 观察者  observer notify
+16. 观察者  observer notify事件触发、消息队列
 17. 门面    facade
 18. 备忘录  memento
 19. 访问者  visitor
