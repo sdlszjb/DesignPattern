@@ -2,6 +2,7 @@ package cn.kisslinux.soft;
 
 import kisslinux.state.StateConcreteState1;
 import kisslinux.state.StateContext;
+import kisslinux.state.example.StateLiftContext;
 import org.junit.Test;
 
 /**
@@ -19,5 +20,23 @@ public class StateTests {
 //        context.handle1();
 //        context.handle2();
         context.handle2();
+    }
+
+    @Test
+    public void testExample() {
+        StateLiftContext context = new StateLiftContext();
+        context.setLiftState(StateLiftContext.closingState);
+
+        context.open();
+        context.close();
+        context.open();
+        context.run();
+        context.stop();
+        context.close();
+        context.run();
+        context.stop();
+        context.run();
+        context.stop();
+        context.open();
     }
 }
