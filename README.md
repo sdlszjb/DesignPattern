@@ -19,7 +19,7 @@ Example。zip和gzip，命令模式可以有 压缩 解压缩 两个命令，但
 17. 门面    facade 控制访问接口、避免风险扩散
 18. 备忘录  memento 对象备份，恢复对象原始状态
 19. 访问者  visitor Element和Visitor双向选择。一个对象结构包含不同的类，遍历，并根据不同类附加操作。
-20. 状态    
+20. 状态    state
 21. 解释器  interpreter
 22. 享元    flyweight
 23. 桥梁    bridge
